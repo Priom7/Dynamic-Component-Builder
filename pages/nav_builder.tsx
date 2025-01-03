@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GeneratedComponentPage from "./generated-nav";
 
 interface NavItem {
   id: string;
@@ -11,6 +12,7 @@ const DynamicNavForm = () => {
     { id: "", label: "", href: "" },
   ]);
   const [generatedNavName, setGeneratedNavName] = useState<string | null>(null);
+  const [code_snippet, setCodeSnippet] = useState<string | null>(null);
 
   // Handle input changes
   const handleNavItemChange = (
@@ -41,6 +43,7 @@ const DynamicNavForm = () => {
     const data = await response.json();
     if (response.ok) {
       setGeneratedNavName(data.message);
+      setCodeSnippet(data.code_snippet);
     } else {
       alert("Error generating nav component");
     }
@@ -82,16 +85,53 @@ const DynamicNavForm = () => {
             />
           </div>
         ))}
-        <button className="btn btn-primary p-1 m-1" type="button" onClick={addNavItem}>
+        <button
+          className="btn btn-primary p-1 m-1"
+          type="button"
+          onClick={addNavItem}
+        >
           Add Nav Item
         </button>
-        <button className="btn btn-success p-1 m-1" type="submit">Generate Nav Bar</button>
+        <button className="btn btn-success p-1 m-1" type="submit">
+          Generate Nav Bar
+        </button>
         <a href="/generated-nav" className="btn btn-primary p-1 m-1">
           View Generated Forms{" "}
         </a>
       </form>
 
-      {generatedNavName && <p>Nav Component Generated: {generatedNavName}</p>}
+      <div className="row mt-4">
+        <div className="col-md-6">
+          {generatedNavName && (
+            <p>Nav Component Generated: {generatedNavName}</p>
+          )}
+          {code_snippet && (
+            <pre
+              style={{
+                backgroundColor: "black",
+                border: "1px solid #d63384",
+                padding: "10px",
+                borderRadius: "5px",
+                height: "400px",
+                overflowY: "scroll",
+              }}
+            >
+              <code style={{ color: "#d63384" }}>{code_snippet}</code>
+            </pre>
+          )}
+        </div>
+        <div className="col-md-6">
+          {generatedNavName && (
+            <div className="container">
+              <h1>Showcasing Generated Components</h1>
+              <iframe
+                src={`../components/dynamicNavComponents/${generatedNavName}`}
+                style={{ width: "100%", height: "500px" }}
+              />
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

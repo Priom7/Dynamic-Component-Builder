@@ -65,7 +65,7 @@ export default ${generatedNavName};
         }
       });
 
-      return res.status(200).json({ message: `Nav component created successfully: ${generatedNavName}`, code_snippet: componentContent });
+      return res.status(200).json({ message: `Nav component created successfully: ${generatedNavName}` });
     });
   } else {
     res.setHeader("Allow", ["POST"]);

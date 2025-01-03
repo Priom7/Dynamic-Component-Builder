@@ -1,0 +1,43 @@
+{
+  "name": "my-student-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0-9",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@reduxjs/toolkit": "^2.2.7",
+    "axios": "^1.7.4",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.3",
+    "framer-motion": "^11.3.28",
+    "fs": "^0.0.1-security",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-bootstrap": "^2.10.4",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-fontawesome": "^1.7.1",
+    "react-redux": "^9.1.2",
+    "react-toastify": "^10.0.5",
+    "redux": "^5.0.1",
+    "socket.io-client": "^4.7.5",
+    "uuid4": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

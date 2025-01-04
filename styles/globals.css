@@ -125,6 +125,7 @@ body {
 .navbar {
   background-color: #333;
   padding: 10px;
+  color: wheat;
 }
 
 .navbar-container {
@@ -154,6 +155,14 @@ body {
 .navbar-links a {
   color: #fff;
   text-decoration: none;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  
 }
 
 /* Mobile Responsive */

@@ -1,4 +1,5 @@
 import React, { useReducer } from "react";
+import "./DynamicForm10.css"; // Import the CSS file
 
 // Define the state structure
 interface FormState {

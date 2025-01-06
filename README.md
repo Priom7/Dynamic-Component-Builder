@@ -86,6 +86,21 @@ Make sure you have the following installed:
 
 ---
 
+## Pros and Cons
+
+
+| Category                    | Pros                                                                                                                                                       | Cons                                                                                             |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Centralized Component Control** | - Ensures consistent UI/UX across dynamically generated components.<br>- Simplifies maintenance by propagating updates to all components automatically.<br>- Reduces code redundancy with reusable component blocks. | - Initial setup may be time-consuming.<br>- Over-customization may complicate or hinder flexibility. |
+| **Scalability & Adaptability**   | - Supports easy customization (e.g., adding fields, filters, columns) to meet growing project requirements.<br>- Future-proof design reduces the impact of changes.                   | - Potential performance issues with unoptimized components.<br>- Requires careful management of dependencies for large-scale projects. |
+| **Developer Productivity**       | - Automates the creation of common UI components (e.g., forms, tables), accelerating development.<br>- Speeds up iteration and deployment of features.<br>- Simplifies complex tasks, such as implementing role-based permissions. | - Steep learning curve for new developers.<br>- Developers may face challenges if unfamiliar with the tool.                                           |
+| **Self-Healing Solutions**       | - Reduces rework by automating common patterns and handling evolving requirements.<br>- Improves app stability by minimizing manual intervention in component changes.                                                    | - May not be suited for smaller, static projects with limited needs.                                                       |
+| **Target Audience**              | - Well-suited for development teams focused on scalability and long-term project growth.<br>- Flexible enough for evolving project requirements.                                     | - May feel excessive for smaller teams or projects with minimal requirements.      |
+
+
+---
+
+
 ## Contributions
 
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.

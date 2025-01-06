@@ -90,11 +90,6 @@ Make sure you have the following installed:
 
 Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit a pull request.
 
----
-
-## License
-
-This project is under the [MIT License](LICENSE).
 
 ---
 

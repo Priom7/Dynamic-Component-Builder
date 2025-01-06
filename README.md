@@ -9,6 +9,8 @@
 First, run the development server:
 
 ```bash
+git clone https://github.com/Priom7/Dynamic-Component-Builder.git
+cd {dir}
 npm install 
 npm run dev
 # or

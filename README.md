@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🔭 Dynamic React Component Builder
+
+<p align="center">
+    <img src="https://github.com/Priom7/Dynamic-Component-Builder/blob/main/Untitled%20design%20(1).gif" width="400" alt="working gif">
+</p>
 
 ## Getting Started
 

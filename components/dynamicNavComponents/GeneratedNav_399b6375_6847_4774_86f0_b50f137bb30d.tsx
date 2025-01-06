@@ -1,14 +1,19 @@
 
 import React, { useState } from 'react';
 
-const GeneratedNav_1880d3a5_decd_4ab7_bee3_5abe8e6f01d9 = () => {
+const GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
   {
-    "id": "gkjty",
-    "label": "ktykty",
-    "href": "ktyktyk"
+    "id": "1",
+    "label": "Nav1",
+    "href": "/nav1"
+  },
+  {
+    "id": "2",
+    "label": "Nav2",
+    "href": "/nav2"
   }
 ];
 
@@ -28,4 +33,4 @@ const GeneratedNav_1880d3a5_decd_4ab7_bee3_5abe8e6f01d9 = () => {
   );
 };
 
-export default GeneratedNav_1880d3a5_decd_4ab7_bee3_5abe8e6f01d9;
+export default GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d;

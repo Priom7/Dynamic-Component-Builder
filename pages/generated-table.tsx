@@ -3,19 +3,25 @@ import fs from "fs";
 import path from "path";
 
 const loadDynamicComponent = (componentPath: string) => {
-    try {
-        return React.lazy(() => import(`../components/dynamicTableComponents/${componentPath}`));
-    } catch (error) {
-        console.error("Error loading dynamic component:", error);
-        return () => <div>Component not created yet</div>;
-    }
+  try {
+    return React.lazy(
+      () => import(`../components/dynamicTableComponents/${componentPath}`)
+    );
+  } catch (error) {
+    console.error("Error loading dynamic component:", error);
+    const FallbackComponent = () => <div>Component not created yet</div>;
+    FallbackComponent.displayName = "FallbackComponent";
+    return FallbackComponent;
+  }
 };
 
 interface GeneratedTablePageProps {
   components: string[];
 }
 
-const GeneratedTablePage: React.FC<GeneratedTablePageProps> = ({ components }) => {
+const GeneratedTablePage: React.FC<GeneratedTablePageProps> = ({
+  components,
+}) => {
   return (
     <div className="container">
       <h1>Generated Dynamic Tables</h1>
@@ -39,12 +45,18 @@ const GeneratedTablePage: React.FC<GeneratedTablePageProps> = ({ components }) =
 };
 
 export async function getStaticProps() {
-  const componentsDir = path.join(process.cwd(), "components", "dynamicTableComponents");
+  const componentsDir = path.join(
+    process.cwd(),
+    "components",
+    "dynamicTableComponents"
+  );
 
   let components: string[] = [];
   try {
     const files = fs.readdirSync(componentsDir);
-    components = files.filter((file) => file.endsWith(".tsx")).map((file) => file.replace(".tsx", ""));
+    components = files
+      .filter((file) => file.endsWith(".tsx"))
+      .map((file) => file.replace(".tsx", ""));
   } catch (err) {
     console.error("Error reading components directory:", err);
   }

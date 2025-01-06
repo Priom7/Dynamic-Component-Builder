@@ -101,9 +101,18 @@ const DynamicNavForm = () => {
       </form>
 
       <div className="row mt-4">
-        <div className="col-md-6">
+        <div className="col-md-12">
           {generatedNavName && (
-            <p>Nav Component Generated: {generatedNavName}</p>
+            <p
+              style={{
+                backgroundColor: "green",
+                color: "white",
+                padding: "10px",
+                borderRadius: "5px",
+              }}
+            >
+              Nav Component Generated: {generatedNavName}
+            </p>
           )}
           {code_snippet && (
             <pre
@@ -122,12 +131,23 @@ const DynamicNavForm = () => {
         </div>
         <div className="col-md-6">
           {generatedNavName && (
-            <div className="container">
-              <h1>Showcasing Generated Components</h1>
-              <iframe
-                src={`../components/dynamicNavComponents/${generatedNavName}`}
-                style={{ width: "100%", height: "500px" }}
-              />
+            <div className="container mt-4">
+              <h2>Dependencies</h2>
+              <ul className="list-group">
+                <li className="list-group-item">
+                  npm install react-router-dom
+                </li>
+                <li className="list-group-item">
+                  npm install @fortawesome/react-fontawesome
+                </li>
+                <li className="list-group-item">
+                  npm install @fortawesome/fontawesome-svg-core
+                </li>
+                <li className="list-group-item">
+                  npm install @fortawesome/free-solid-svg-icons
+                </li>
+                <li className="list-group-item">npm install bootstrap</li>
+              </ul>
             </div>
           )}
         </div>

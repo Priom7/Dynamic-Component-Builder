@@ -1,15 +1,19 @@
 
 import React, { useState } from 'react';
 
-const GeneratedTab_02878b0b_6f62_4afa_bdbb_cb5b46eb34be = () => {
+const GeneratedTab_bc97d10e_cdaf_4a31_a73e_e0857edb1ed4 = () => {
   const tabs = [
   {
-    "id": "fhrth",
-    "title": "rthrth"
+    "id": "1",
+    "title": "Home"
   },
   {
-    "id": "rthrth",
-    "title": "rthr"
+    "id": "2",
+    "title": "Timeline"
+  },
+  {
+    "id": "3",
+    "title": "Profile/{id}"
   }
 ];
   const [activeTab, setActiveTab] = useState(tabs[0]?.id);
@@ -35,4 +39,4 @@ const GeneratedTab_02878b0b_6f62_4afa_bdbb_cb5b46eb34be = () => {
   );
 };
 
-export default GeneratedTab_02878b0b_6f62_4afa_bdbb_cb5b46eb34be;
+export default GeneratedTab_bc97d10e_cdaf_4a31_a73e_e0857edb1ed4;

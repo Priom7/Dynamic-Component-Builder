@@ -108,10 +108,7 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 
 ---
 
-## Demo
+## Article
 
-Check out the demo below to see the **Dynamic React Component Builder** in action:
+Check out the article: https://medium.com/@priom7197/introducing-the-dynamic-react-component-builder-ec50c4fc302e
 
-<p align="center">
-    <img src="https://github.com/Priom7/Dynamic-Component-Builder/blob/main/Untitled%20design%20(1).gif" alt="demo">
-</p>

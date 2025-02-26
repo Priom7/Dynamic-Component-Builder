@@ -96,8 +96,8 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
-    const { name, value, type, checked } = e.target;
-    const newValue = type === "checkbox" ? (checked ? "true" : "false") : value;
+    const { name, value, type } = e.target;
+    const newValue = type === "checkbox" && e.target instanceof HTMLInputElement ? (e.target.checked ? "true" : "false") : value;         
     dispatch({ type: "SET_FIELD", field: name, value: newValue });
 
     // Validate field on change

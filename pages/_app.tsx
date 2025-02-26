@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../components/Navbar";
 import store from "../redux/store";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -67,21 +68,21 @@ function MyApp({ Component, pageProps }: AppProps) {
             </div>
             <div className="col-md-4">
               <h5 className="text-white">Social</h5>
-              <a href="#" className="text-white me-2">
+              <Link href="#" className="text-white me-2">
                 <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a href="#" className="text-white me-2">
+              </Link>
+              <Link href="#" className="text-white me-2">
                 <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a href="#" className="text-white me-2">
+              </Link>
+              <Link href="#" className="text-white me-2">
                 <FontAwesomeIcon icon={faYoutube} />
-              </a>
-              <a href="#" className="text-white me-2">
+              </Link>
+              <Link href="#" className="text-white me-2">
                 <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href="#" className="text-white me-2">
+              </Link>
+              <Link href="#" className="text-white me-2">
                 <FontAwesomeIcon icon={faInstagram} />
-              </a>
+              </Link>
             </div>
             <div className="col-md-4">
               <h5 className="text-white">Contact Us</h5>

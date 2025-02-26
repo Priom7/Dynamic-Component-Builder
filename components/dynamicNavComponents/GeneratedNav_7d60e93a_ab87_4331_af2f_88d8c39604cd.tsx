@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const GeneratedNav_7d60e93a_ab87_4331_af2f_88d8c39604cd = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const GeneratedNav_7d60e93a_ab87_4331_af2f_88d8c39604cd = () => {
         <ul className={menuOpen ? 'navbar-links open' : 'navbar-links'}>
           {navItems.map((item) => (
             <li key={item.id}>
-              <a href={item.href}>{item.label}</a>
+              <Link href={item.href}>{item.label}</Link>
             </li>
           ))}
         </ul>

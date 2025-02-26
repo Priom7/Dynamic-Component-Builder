@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GeneratedComponentPage from "./generated-nav";
+import Link from "next/link";
 
 interface NavItem {
   id: string;
@@ -95,9 +96,9 @@ const DynamicNavForm = () => {
         <button className="btn btn-success p-1 m-1" type="submit">
           Generate Nav Bar
         </button>
-        <a href="/generated-nav" className="btn btn-primary p-1 m-1">
+        <Link href="/generated-nav" className="btn btn-primary p-1 m-1">
           View Generated Forms{" "}
-        </a>
+        </Link>
       </form>
 
       <div className="row mt-4">

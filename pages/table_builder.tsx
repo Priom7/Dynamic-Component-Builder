@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const TableConfigForm = () => {
   const [columns, setColumns] = useState([{ field: "", header: "" }]);
@@ -77,9 +78,9 @@ const TableConfigForm = () => {
           <button type="submit" className="btn btn-success p-1 m-1">
             Generate Table
           </button>
-          <a href="/generated-table" className="btn btn-primary p-1 m-1">
+          <Link href="/generated-table" className="btn btn-primary p-1 m-1">
           View Generated Forms{" "}
-        </a>
+        </Link>
         </div>
       </form>
 

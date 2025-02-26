@@ -1,20 +1,19 @@
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 
-const GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d = () => {
+const GeneratedNav_440b24f9_93b2_4a64_b27b_a6e9045c5c41 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
   {
     "id": "1",
-    "label": "Nav1",
-    "href": "/nav1"
+    "label": "1",
+    "href": "1"
   },
   {
     "id": "2",
-    "label": "Nav2",
-    "href": "/nav2"
+    "label": "2",
+    "href": "2"
   }
 ];
 
@@ -25,7 +24,7 @@ const GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d = () => {
         <ul className={menuOpen ? 'navbar-links open' : 'navbar-links'}>
           {navItems.map((item) => (
             <li key={item.id}>
-              <Link href={item.href}>{item.label}</Link>
+              <a href={item.href}>{item.label}</a>
             </li>
           ))}
         </ul>
@@ -34,4 +33,4 @@ const GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d = () => {
   );
 };
 
-export default GeneratedNav_399b6375_6847_4774_86f0_b50f137bb30d;
+export default GeneratedNav_440b24f9_93b2_4a64_b27b_a6e9045c5c41;

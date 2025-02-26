@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 interface Tab {
   id: string;
@@ -70,9 +71,9 @@ const DynamicTabForm = () => {
           Add Tab
         </button>
         <button type="submit">Generate Tab Bar</button>
-        <a href="/generated-tab" className="btn btn-primary p-1 m-1">
+        <Link href="/generated-tab" className="btn btn-primary p-1 m-1">
           View Generated Tabs{" "}
-        </a>
+        </Link>
       </form>
 
       {generatedTabName && <p>Tab Component Generated: {generatedTabName}</p>}

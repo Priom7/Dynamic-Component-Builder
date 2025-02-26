@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DynamicForm from './DynamicForm';
 
 const SampleForm = () => {
-  const [submittedData, setSubmittedData] = useState(null);
+  const [submittedData, setSubmittedData] = useState<{ [key: string]: string } | null>(null);
 
   const formFields = [
     { name: 'fullName', label: 'Full Name', type: 'text', required: true },
